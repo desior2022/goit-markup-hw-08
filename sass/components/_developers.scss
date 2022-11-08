@@ -1,94 +1,128 @@
-// .developers {
-//   background-color: $background-color;
-// }
+.developer {
+  padding: 60px 0;
+  background-color: $background-color;
+}
 
-// .developers__title {
-//   margin: 0 auto;
-//   margin-bottom: 50px;
+.developers__title {
+  margin: 0 auto;
+  margin-bottom: 50px;
 
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: 1.16;
-//   text-align: center;
-// }
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
 
-// .developers__list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin: 0 auto;
-//   padding-left: 0;
-//   gap: 30px;
-//   list-style: none;
-// }
+.developers__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style: none;
+}
 
-// .developers__box {
-//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//     0px 2px 1px rgba(0, 0, 0, 0.2);
-//   border-radius: 0px 0px 4px 4px;
-// }
+.developers__box {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
-// .card-set {
-//   padding-top: 30px;
-//   padding-bottom: 30px;
-//   text-align: center;
+.card-set {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 
-//   background-color: $secondary-color;
-//   border-radius: 0px 0px 4px 4px;
-// }
+  background-color: $secondary-color;
+  border-radius: 0px 0px 4px 4px;
+}
 
-// .card-set__name {
-//   margin: 0 auto;
-//   margin-bottom: 10px;
+.card-set__name {
+  margin: 0 auto;
+  margin-bottom: 10px;
 
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 1.18;
-// }
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
 
-// .card-set__direction {
-//   margin: 0 auto;
+.card-set__direction {
+  margin: 0 auto;
 
-//   font-size: 16px;
-//   line-height: 1.18;
-//   color: $secondary-text-color;
-// }
+  font-size: 16px;
+  line-height: 1.18;
+  color: $secondary-text-color;
+}
 
-// .social-networks {
-//   margin-top: 16px;
-//   padding: 0 32px;
-// }
+.social-networks {
+  margin-top: 16px;
+  padding: 0 32px;
+}
 
-// .social-networks__list {
-//   display: flex;
-//   list-style: none;
-//   gap: 0;
-//   margin: 0;
-//   padding: 0;
-// }
+.social-networks__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
 
-// .social-networks__item:not(:last-child) {
-//   margin-right: 10px;
-// }
+.social-networks__item:not(:last-child) {
+  margin-right: 10px;
+}
 
-// .social-networks__link {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: 44px;
-//   width: 44px;
+.social-networks__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
 
-//   border-radius: 50%;
-//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   &:hover {
-//     background-color: $accent-color;
-//   }
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: $accent-color;
+  }
 
-//   &:hover svg use {
-//     fill: $secondary-color;
-//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-// }
+  &:hover svg use {
+    fill: $secondary-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
 
-// .social-networks__icon {
-//   fill: $icon-color;
-// }
+.social-networks__icon {
+  fill: $icon-color;
+}
+
+@media screen and (min-width: 768px) {
+  .developers__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .developers__box {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .developer {
+    padding: 94px 0;
+  }
+  .developers__list {
+    gap: 30px;
+    margin: 0;
+  }
+  .developers__box {
+    width: 270px;
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}

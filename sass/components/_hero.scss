@@ -13,11 +13,10 @@
   background-size: cover;
   background-color: $secondary-color;
 }
-.hero .container {
-  padding: 118px 0;
-}
 
 .hero__title {
+  max-width: 400px;
+  padding-top: 118px;
   margin: 0 auto;
   margin-bottom: 30px;
 
@@ -75,8 +74,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -181,8 +180,8 @@
   margin-bottom: 30px;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
   color: $secondary-text-color;
@@ -246,5 +245,41 @@ input:checked + label .modal-form__check-mark {
   color: $secondary-color;
   &:hover {
     background-color: $hover-color;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 1600px;
+    height: 400px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../image/hero.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+  .hero__title {
+    max-width: 600px;
+    padding-top: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  .modal-window {
+    width: 528px;
+    height: 581px;
+  }
+  .modal-form__mailling {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
