@@ -71,6 +71,10 @@
   .skills__item:not(:last-child) {
     margin-bottom: 0;
   }
+
+  .skills__title {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -85,8 +89,5 @@
   .skills__item {
     width: 270px;
     margin: 0 auto;
-  }
-  .skills__title {
-    text-align: start;
   }
 }
